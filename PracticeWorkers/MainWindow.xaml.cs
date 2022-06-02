@@ -141,7 +141,7 @@ namespace PracticeWorkers
             } else
             {
                 File.Create(jsonJob);
-                jsonFile = File.ReadAllText(jsonFile);
+                jsonFile = File.ReadAllText(jsonJob);
             }
             var deserJob = JsonConvert.DeserializeObject<List<Post>>(jsonFile);
 
